@@ -17,5 +17,6 @@ offset_bottom = 21.0
 script = ExtResource("2_8ro7m")
 metadata/_edit_use_anchors_ = true
 
-[node name="Coin Pile" parent="." instance=ExtResource("3_f048v")]
-position = Vector2(0, -76)
+[node name="Coin Pile" parent="Button" instance=ExtResource("3_f048v")]
+visible = false
+position = Vector2(54, -56)
