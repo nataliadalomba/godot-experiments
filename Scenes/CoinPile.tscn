@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmm7pddw2ardp"]
+
+[ext_resource type="Texture2D" uid="uid://b35n4sbebb6d" path="res://Assets/Sprites/Coin Pile.png" id="1_et2oc"]
+
+[node name="Coin Pile" type="Sprite2D"]
+scale = Vector2(4, 4)
+texture = ExtResource("1_et2oc")
