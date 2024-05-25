@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=10 format=3 uid="uid://f66208erewr1"]
+[gd_resource type="Theme" load_steps=11 format=3 uid="uid://f66208erewr1"]
 
 [ext_resource type="FontFile" uid="uid://j4ld127blg5d" path="res://Assets/Fonts/Happy School.ttf" id="1_2x8h6"]
 [ext_resource type="Texture2D" uid="uid://dddmvpt2vesnn" path="res://Assets/Sprites/Button.png" id="2_2ujna"]
@@ -35,6 +35,8 @@ texture_margin_top = 10.0
 texture_margin_right = 10.0
 texture_margin_bottom = 10.0
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uniuf"]
+
 [resource]
 Button/colors/font_hover_pressed_color = Color(0.24, 0.24, 0.24, 1)
 Button/fonts/font = ExtResource("1_2x8h6")
@@ -45,3 +47,4 @@ Button/styles/normal = SubResource("StyleBoxTexture_2vevv")
 Button/styles/pressed = SubResource("StyleBoxTexture_4n5yk")
 Label/font_sizes/font_size = 32
 Label/fonts/font = ExtResource("1_2x8h6")
+Panel/styles/panel = SubResource("StyleBoxEmpty_uniuf")
