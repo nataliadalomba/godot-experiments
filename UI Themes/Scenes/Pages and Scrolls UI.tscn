@@ -1,0 +1,194 @@
+[gd_scene load_steps=15 format=3 uid="uid://ehrbw4k4ckgw"]
+
+[ext_resource type="Texture2D" uid="uid://hd1sqv3qgquh" path="res://Assets/Sprites/Pages and Scrolls/Map Panel faded.png" id="1_kbmbn"]
+[ext_resource type="Theme" uid="uid://cauwawd7al6ld" path="res://Themes/Pages and Scrolls Title theme.tres" id="2_b8o8k"]
+[ext_resource type="Texture2D" uid="uid://cutax0vap4l8s" path="res://Assets/Sprites/Pages and Scrolls/Input Field.png" id="3_fn1ni"]
+[ext_resource type="Texture2D" uid="uid://cxutn8rj3cvfd" path="res://Assets/Sprites/Pages and Scrolls/Quill Cursor.png" id="4_lrhh2"]
+[ext_resource type="Texture2D" uid="uid://dj3at6fybbmve" path="res://Assets/Sprites/Pages and Scrolls/Button.png" id="5_jo0rm"]
+[ext_resource type="Texture2D" uid="uid://d2ajss3d45smo" path="res://Assets/Sprites/Pages and Scrolls/Checkbox (checked).png" id="6_8mf5d"]
+[ext_resource type="Texture2D" uid="uid://bw6e0t7yknbjs" path="res://Assets/Sprites/Pages and Scrolls/Checkbox (unchecked).png" id="7_fqkd5"]
+[ext_resource type="Texture2D" uid="uid://8qdx7xw6n28g" path="res://Assets/Sprites/Pages and Scrolls/Radio Button (unfilled).png" id="8_v81l8"]
+[ext_resource type="Texture2D" uid="uid://dmsuodutjdlow" path="res://Assets/Sprites/Pages and Scrolls/Radio Button (filled).png" id="9_c27wt"]
+[ext_resource type="Texture2D" uid="uid://b5wm4yybq3wf8" path="res://Assets/Sprites/Pages and Scrolls/Dropdown - whole prop.png" id="10_oxrdw"]
+[ext_resource type="Texture2D" uid="uid://ck48xhwbn3xs6" path="res://Assets/Sprites/Pages and Scrolls/X Close Button.png" id="11_dp3vg"]
+[ext_resource type="Texture2D" uid="uid://dajbves23be2c" path="res://Assets/Sprites/Pages and Scrolls/Slider.png" id="12_554hc"]
+[ext_resource type="Texture2D" uid="uid://bn2qyoru2ugh1" path="res://Assets/Sprites/Pages and Scrolls/Scroll Panel.png" id="13_sbcmk"]
+[ext_resource type="Theme" path="res://Themes/UI Theme.tres" id="14_shjyw"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Map Panel" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(960, 536)
+scale = Vector2(8, 8)
+texture = ExtResource("1_kbmbn")
+
+[node name="Title text" type="RichTextLabel" parent="Map Panel"]
+offset_left = -48.0
+offset_top = -46.0
+offset_right = 51.0
+offset_bottom = -30.0
+theme = ExtResource("2_b8o8k")
+text = "Settings"
+scroll_active = false
+
+[node name="Input Field 3" type="Sprite2D" parent="Map Panel"]
+position = Vector2(-31.2, -21.2)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("3_fn1ni")
+
+[node name="Input Field 4" type="Sprite2D" parent="Map Panel"]
+position = Vector2(-25.9, -9.2)
+scale = Vector2(1.04091, 0.8)
+texture = ExtResource("3_fn1ni")
+
+[node name="Quill Cursor 2" type="Sprite2D" parent="Map Panel"]
+position = Vector2(-44.2, -24.2)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_lrhh2")
+
+[node name="Button 2" type="Sprite2D" parent="Map Panel"]
+position = Vector2(11, -9.325)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("5_jo0rm")
+
+[node name="Checkbox - checked 2" type="Sprite2D" parent="Map Panel"]
+position = Vector2(-44, 3.8)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("6_8mf5d")
+
+[node name="Checkbox - unchecked 2" type="Sprite2D" parent="Map Panel"]
+position = Vector2(-44, 12.8)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("7_fqkd5")
+
+[node name="Radio Button - unfilled 3" type="Sprite2D" parent="Map Panel"]
+position = Vector2(-22, 4.8)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("8_v81l8")
+
+[node name="Radio Button - filled 2" type="Sprite2D" parent="Map Panel"]
+position = Vector2(-22, 14.2)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("9_c27wt")
+
+[node name="Radio Button - unfilled 4" type="Sprite2D" parent="Map Panel"]
+position = Vector2(-22, 23.2)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("8_v81l8")
+
+[node name="Dropdown 2" type="Sprite2D" parent="Map Panel"]
+position = Vector2(30, 19.8)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_oxrdw")
+
+[node name="X Close Button 2" type="Sprite2D" parent="Map Panel"]
+position = Vector2(63, 39)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("11_dp3vg")
+
+[node name="Slider 2" type="Sprite2D" parent="Map Panel"]
+position = Vector2(-29, 30.8)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("12_554hc")
+
+[node name="Scroll Panel" type="Sprite2D" parent="."]
+position = Vector2(960, 536)
+scale = Vector2(8, 8)
+texture = ExtResource("13_sbcmk")
+
+[node name="Title text 2" type="RichTextLabel" parent="Scroll Panel"]
+offset_left = -48.0
+offset_top = -58.0
+offset_right = 51.0
+offset_bottom = -42.0
+theme = ExtResource("2_b8o8k")
+text = "Settings"
+scroll_active = false
+
+[node name="Input Field" type="Sprite2D" parent="Scroll Panel"]
+position = Vector2(-31.2, -35.2)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("3_fn1ni")
+
+[node name="Input Field 2" type="Sprite2D" parent="Scroll Panel"]
+position = Vector2(-24.4, -23.2)
+scale = Vector2(1.10909, 0.8)
+texture = ExtResource("3_fn1ni")
+
+[node name="Quill Cursor" type="Sprite2D" parent="Scroll Panel"]
+position = Vector2(-44.2, -38.2)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("4_lrhh2")
+
+[node name="Button" type="Sprite2D" parent="Scroll Panel"]
+position = Vector2(11, -23.325)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("5_jo0rm")
+
+[node name="Checkbox - checked" type="Sprite2D" parent="Scroll Panel"]
+position = Vector2(-44, -10.2)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("6_8mf5d")
+
+[node name="Checkbox - unchecked" type="Sprite2D" parent="Scroll Panel"]
+position = Vector2(-44, -1.2)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("7_fqkd5")
+
+[node name="Radio Button - unfilled" type="Sprite2D" parent="Scroll Panel"]
+position = Vector2(-22, -9.2)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("8_v81l8")
+
+[node name="Radio Button - filled" type="Sprite2D" parent="Scroll Panel"]
+position = Vector2(-22, 0.199999)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("9_c27wt")
+
+[node name="Radio Button - unfilled 2" type="Sprite2D" parent="Scroll Panel"]
+position = Vector2(-22, 9.2)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("8_v81l8")
+
+[node name="Dropdown" type="Sprite2D" parent="Scroll Panel"]
+position = Vector2(30, 5.8)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_oxrdw")
+
+[node name="X Close Button" type="Sprite2D" parent="Scroll Panel"]
+position = Vector2(59, 46)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("11_dp3vg")
+
+[node name="Slider" type="Sprite2D" parent="Scroll Panel"]
+position = Vector2(-29, 16.8)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("12_554hc")
+
+[node name="Exit text" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 1408.0
+offset_top = 952.0
+offset_right = 1499.0
+offset_bottom = 992.0
+theme = ExtResource("14_shjyw")
+text = "EXIT"
+scroll_active = false
+
+[node name="Exit text 2" type="RichTextLabel" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1432.0
+offset_top = 904.0
+offset_right = 1497.0
+offset_bottom = 944.0
+theme = ExtResource("14_shjyw")
+text = "EXIT"
+scroll_active = false
