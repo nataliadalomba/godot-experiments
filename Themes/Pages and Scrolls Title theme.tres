@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cauwawd7al6ld"]
+
+[ext_resource type="FontFile" uid="uid://durft58m7g2ai" path="res://Assets/Fonts/Alkhemikal.ttf" id="1_dxnd8"]
+
+[resource]
+RichTextLabel/colors/default_color = Color(0.341176, 0.298039, 0.207843, 1)
+RichTextLabel/font_sizes/normal_font_size = 16
+RichTextLabel/fonts/normal_font = ExtResource("1_dxnd8")

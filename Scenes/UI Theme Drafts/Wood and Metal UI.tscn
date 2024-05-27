@@ -1,0 +1,112 @@
+[gd_scene load_steps=13 format=3 uid="uid://cvlo3upvwk31w"]
+
+[ext_resource type="Texture2D" uid="uid://cud1ifmpb8hxt" path="res://Assets/Sprites/UI Theme Drafts/Wood and Metal/Panel.png" id="1_16soo"]
+[ext_resource type="Theme" uid="uid://c8k5n020ql7r7" path="res://Themes/Wood and Metal.tres" id="2_ijcrl"]
+[ext_resource type="Texture2D" uid="uid://ousgumgc5jfh" path="res://Assets/Sprites/UI Theme Drafts/Wood and Metal/X Close Button.png" id="3_eqfa0"]
+[ext_resource type="Texture2D" uid="uid://cawmsx50e3cum" path="res://Assets/Sprites/UI Theme Drafts/Wood and Metal/Cursor Pipe.png" id="5_0ggh0"]
+[ext_resource type="Texture2D" uid="uid://dag78xjh7cx1j" path="res://Assets/Sprites/UI Theme Drafts/Wood and Metal/Dropdown.png" id="6_6ieps"]
+[ext_resource type="Texture2D" uid="uid://bdpg5rv6p1mbl" path="res://Assets/Sprites/UI Theme Drafts/Wood and Metal/Button.png" id="7_lg06p"]
+[ext_resource type="Texture2D" uid="uid://d3c732ok5smbu" path="res://Assets/Sprites/UI Theme Drafts/Wood and Metal/Checkbox (checked).png" id="7_ss3d4"]
+[ext_resource type="Texture2D" uid="uid://d4dbxj84phi2p" path="res://Assets/Sprites/UI Theme Drafts/Wood and Metal/Checkbox (unchecked).png" id="8_idrrm"]
+[ext_resource type="Texture2D" uid="uid://cahjc85ldlww4" path="res://Assets/Sprites/UI Theme Drafts/Wood and Metal/Radio Button (unfilled).png" id="9_xcge5"]
+[ext_resource type="Texture2D" uid="uid://bsxgu5dh54qa8" path="res://Assets/Sprites/UI Theme Drafts/Wood and Metal/Radio Button (filled).png" id="10_vbuif"]
+[ext_resource type="Texture2D" uid="uid://blctvtvr3tttb" path="res://Assets/Sprites/UI Theme Drafts/Wood and Metal/Slider.png" id="11_4qe2x"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oontj"]
+texture = ExtResource("7_lg06p")
+texture_margin_left = 2.0
+texture_margin_top = 1.0
+texture_margin_right = 2.0
+texture_margin_bottom = 5.0
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Sprite2D" parent="."]
+position = Vector2(960, 536)
+scale = Vector2(8, 8)
+texture = ExtResource("1_16soo")
+
+[node name="Settings title" type="RichTextLabel" parent="Panel"]
+offset_left = -48.0
+offset_top = -49.0
+offset_right = 51.0
+offset_bottom = -33.0
+theme = ExtResource("2_ijcrl")
+text = "Settings"
+scroll_active = false
+
+[node name="X Close Button" type="Sprite2D" parent="Panel"]
+position = Vector2(54, -57)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_eqfa0")
+
+[node name="Input Field 2" type="Button" parent="Panel"]
+offset_left = -48.0
+offset_top = -17.125
+offset_right = 66.0
+offset_bottom = 12.875
+scale = Vector2(0.8, 0.8)
+theme = ExtResource("2_ijcrl")
+
+[node name="Input Field 3" type="Button" parent="Panel"]
+offset_left = -48.0
+offset_top = -29.5
+offset_right = -2.0
+offset_bottom = -19.5
+scale = Vector2(0.8, 0.8)
+theme = ExtResource("2_ijcrl")
+
+[node name="Cursor Pipe" type="Sprite2D" parent="Panel"]
+position = Vector2(-43.125, -26.125)
+scale = Vector2(0.4, 0.325)
+texture = ExtResource("5_0ggh0")
+
+[node name="Button 2" type="Button" parent="Panel"]
+offset_left = -8.75
+offset_top = -28.75
+offset_right = 12.25
+offset_bottom = -16.75
+scale = Vector2(0.7, 0.7)
+theme = ExtResource("2_ijcrl")
+theme_override_styles/normal = SubResource("StyleBoxTexture_oontj")
+
+[node name="Dropdown" type="Sprite2D" parent="Panel"]
+position = Vector2(-29, 30.875)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("6_6ieps")
+
+[node name="Checkbox - checked" type="Sprite2D" parent="Panel"]
+position = Vector2(9.2, 16.075)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("7_ss3d4")
+
+[node name="Checkbox - unchecked" type="Sprite2D" parent="Panel"]
+position = Vector2(9.2, 26.875)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("8_idrrm")
+
+[node name="Radio Button - unfilled" type="Sprite2D" parent="Panel"]
+position = Vector2(33.2, 16.075)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("9_xcge5")
+
+[node name="Radio Button - filled" type="Sprite2D" parent="Panel"]
+position = Vector2(33.2, 25.475)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("10_vbuif")
+
+[node name="Radio Button - unfilled 2" type="Sprite2D" parent="Panel"]
+position = Vector2(33.2, 34.475)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("9_xcge5")
+
+[node name="Slider" type="Sprite2D" parent="Panel"]
+position = Vector2(20.375, 47.125)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("11_4qe2x")

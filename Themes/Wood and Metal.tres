@@ -1,0 +1,27 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://c8k5n020ql7r7"]
+
+[ext_resource type="Texture2D" uid="uid://bdpg5rv6p1mbl" path="res://Assets/Sprites/UI Theme Drafts/Wood and Metal/Button.png" id="1_rgybk"]
+[ext_resource type="FontFile" uid="uid://dypn5tgjmrxdx" path="res://Assets/Fonts/Wood and Metal.ttf" id="1_xb386"]
+[ext_resource type="Texture2D" uid="uid://bcboso5qqqtvv" path="res://Assets/Sprites/UI Theme Drafts/Wood and Metal/Input Field.png" id="2_jwd4x"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gregf"]
+texture = ExtResource("1_rgybk")
+texture_margin_left = 2.0
+texture_margin_top = 1.0
+texture_margin_right = 2.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_epalk"]
+texture = ExtResource("2_jwd4x")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+
+[resource]
+Button/fonts/font = ExtResource("1_xb386")
+Button/styles/button = SubResource("StyleBoxTexture_gregf")
+Button/styles/normal = SubResource("StyleBoxTexture_epalk")
+RichTextLabel/colors/default_color = Color(0.775063, 0.775063, 0.775063, 1)
+RichTextLabel/font_sizes/normal_font_size = 16
+RichTextLabel/fonts/normal_font = ExtResource("1_xb386")
